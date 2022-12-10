@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #DFDFDF;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: 'Assistant', sans-serif;
+}
+
+header {
+	padding: 1.5rem;
+	background-color: #242F3E;
+}
+
+header a {
+	font-size: 1.2rem;
+	color: white;
+	text-decoration: none;
+	padding: 0.8rem;
+}
+
+header a.active, a:hover{
+	color: #00A8E1;
+}
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	font-style: italic;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.column-left-30 {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.column-right-60 {
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.row-logo {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.row-names {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+    	flex-direction: column;
+  	}
+	.column-left-30 {
+		width: 100%;
+		flex-direction: column;
+		align-content: center;
+	}
+	.row-logo {
+		width: 100%;
+		flex-direction: column;
+		align-content: center;
+	}
+	.row-names {
+		width: 100%;
+		flex-direction: column;
+		align-content: center;
+	}
+	.column-right-60 {
+		width: 100%;
+		flex-direction: column;
+		align-content: center;
+	}
+}
+
+.wpi-logo {
+	width: 100%;
+ 	max-width: 15rem;
+  	height: auto;
+	padding: .5rem;
+}
+
+section {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.section-header {
+	width: 100%;
+	color: #242F3E;
+	font-size: 3rem;
+	font-weight: 800;
+	text-transform: capitalize;
+	font-family: 'Passion One', cursive;
+	display: flex;
+	flex-direction: row;
+}
+
+.prime-logo {
+	margin: auto;
+	width: 100%;
+	max-width: 20rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	border-radius: 2rem;
+}
+
+.section-header:before,
+.section-header:after {
+	content: "";
+	flex: 1 1;
+	border-bottom: 2px solid #000;
+	margin: auto;
+}
+
+.grey-style{
+	color: #242F3E;
+}
+
